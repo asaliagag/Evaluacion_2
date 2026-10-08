@@ -17,7 +17,29 @@ Analizar las características del dataset e identificar patrones relacionados co
 - Filtros interactivos.
 - Presentación de hallazgos y conclusiones.
 
-## 4. Herramientas utilizadas
+## 4. Capturas de la aplicación
+
+A continuación, se presentan algunas pantallas de la aplicación desarrollada en Streamlit.
+
+### 4.1 Pantalla principal
+![Pantalla principal](Pantalla%20principal.png)
+
+### 4.2 Carga de archivo
+![Carga de archivo](Carga%20de%20archivo.png)
+
+### 4.3 Calidad de datos
+![Calidad de datos](Calidad%20de%20datos.png)
+
+### 4.4 Análisis gráfico
+![Análisis gráfico](An%C3%A1lisis%20gr%C3%A1fico.png)
+
+### 4.5 Filtros interactivos
+![Filtros interactivos](Filtros%20interactivos.png)
+
+### 4.6 Conclusiones
+![Conclusiones](Conclusiones.png)
+
+## 5. Herramientas utilizadas
 - Python
 - Streamlit
 - Pandas
@@ -25,7 +47,7 @@ Analizar las características del dataset e identificar patrones relacionados co
 - Matplotlib
 - Seaborn
 
-## 5. Ejecución
+## 6. Ejecución
 La aplicación se encuentra publicada en Streamlit Cloud y puede utilizarse directamente desde el enlace proporcionado.
 También es posible ejecutarla desde una computadora siguiendo estos pasos:
 1. Descargar los archivos del repositorio de GitHub.
@@ -33,7 +55,7 @@ También es posible ejecutarla desde una computadora siguiendo estos pasos:
 3. Iniciar la aplicación con el comando streamlit run app.py.
 4. Cargar el archivo CSV desde la aplicación para visualizar los análisis y gráficos.
 
-## Autora
+## 7. Autora
 Andrea Aliaga Garma
 
 Especialización Python for Analytics – 2026.
