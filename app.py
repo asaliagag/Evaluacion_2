@@ -773,7 +773,8 @@ elif modulo == "Conclusiones":
     )
 
     st.info(
-        "La principal recomendación es interpretar los patrones de forma conjunta, "
-        "considerar el desbalance de la variable depression_label y evitar conclusiones "
-        "causales a partir de un análisis exclusivamente descriptivo."
+        "Se recomienda analizar los resultados en conjunto, teniendo en cuenta que existen muchos más "
+        "registros de adolescentes sin presencia de depresión que con presencia de depresión. Además, "
+        "Además, es importante recordar que este análisis permite identificar diferencias y patrones "
+        "entre los grupos, pero no determinar las causas de estos resultados."
     )
