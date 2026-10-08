@@ -708,10 +708,8 @@ elif modulo == "Análisis Exploratorio (EDA)":
             "No prueban causalidad y no deben utilizarse como diagnóstico clínico."
         )
 
-
-# ---------------------------------------------------------
 # CONCLUSIONES
-# ---------------------------------------------------------
+
 elif modulo == "Conclusiones":
     st.title("Conclusiones finales")
     st.write(
@@ -755,8 +753,8 @@ elif modulo == "Conclusiones":
            **{df.shape[1]} variables**. Presenta **{df.isnull().sum().sum()} valores
            nulos** y **{df.duplicated().sum()} registros duplicados**.
 
-        2. **Distribución de la etiqueta:** la categoría 1 representa
-           **{positivos} registros ({pct:.2f}%)**. Este desbalance debe considerarse
+        2. **Distribución de la etiqueta de depresión:** los adolescentes con depresión
+           representan **{positivos} registros ({pct:.2f}%)** del total. Este desbalance debe considerarse
            al interpretar comparaciones entre grupos.
 
         3. **Uso de redes sociales:** el promedio es de
