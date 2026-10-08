@@ -26,10 +26,12 @@ Analizar las características del dataset e identificar patrones relacionados co
 - Seaborn
 
 ## 5. Ejecución
-Para ejecutar la aplicación localmente:
-pip install -r requirements.txt
-streamlit run app.py
-
+La aplicación se encuentra publicada en Streamlit Cloud y puede utilizarse directamente desde el enlace proporcionado.
+También es posible ejecutarla desde una computadora siguiendo estos pasos:
+1. Descargar los archivos del repositorio de GitHub.
+2. Instalar las librerías necesarias mediante el comando pip install -r requirements.txt.
+3. Iniciar la aplicación con el comando streamlit run app.py.
+4. Cargar el archivo CSV desde la aplicación para visualizar los análisis y gráficos.
 
 ## Autora
 Andrea Aliaga Garma
