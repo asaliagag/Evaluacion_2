@@ -692,7 +692,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
                presentan la etiqueta de depresión Esto significa que la mayoría de 
                los registros corresponde a adolescentes sin presencia de depresión.
             2. El uso promedio diario de redes sociales es **{social_0:.2f} h**
-               para etiqueta 0 y **{social_1:.2f} h** para adolescentes con presencia
+               para aquellos sin presencia de depresión y **{social_1:.2f} h** para adolescentes con presencia
                de despresión.
             3. Los adolescentes con presencia de depresión duermen en promedio **{sleep_0:.2f} h**
                y **{sleep_1:.2f} h** de quienes no presentan esta condición.
