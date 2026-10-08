@@ -280,7 +280,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
         })
         st.dataframe(tipos, use_container_width=True)
 
-        if st.checkbox(""Mostrar información técnica del dataset (df.info())"):
+        if st.checkbox("Mostrar información técnica del dataset (df.info())"):
             buffer = io.StringIO()
             df.info(buf=buffer)
             st.text(buffer.getvalue())
