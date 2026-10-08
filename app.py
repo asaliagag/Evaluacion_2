@@ -697,7 +697,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
             3. Los adolescentes con presencia de depresión duermen en promedio **{sleep_0:.2f} h**
                y **{sleep_1:.2f} h** de quienes no presentan esta condición.
             4. Los adolescentes con presencia de depresión registran un nivel promedio de estrés de **{stress_0:.2f}** 
-               y **{stress_1:.2f}** p 8.48, mientras que aquellos sin presencia de depresión.
+               que aquellos sin presencia de depresión alcanzan **{stress_1:.2f}**.
             5. Los adolescentes con presencia de depresión presentan un nivel promedio de ansiedad de **{anxiety_0:.2f}**
                y **{anxiety_1:.2f}** para quienes no presentan esta condición.
             """
