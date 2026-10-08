@@ -638,7 +638,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
             ].corr().iloc[0, 1]
 
             st.write(
-                f"Correlación descriptiva en los datos filtrados: "
+                f"El análisis de los datos filtrados muestra una correlación de: "
                 f"**{correlacion:.2f}**."
             )
 
@@ -649,7 +649,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
         mostrar_titulo_item(
             10,
             "Hallazgos clave",
-            "Resumen automático de algunos patrones descriptivos del dataset cargado."
+            "Resumen de algunos patrones descriptivos del dataset cargado."
         )
 
         total = len(df)
@@ -688,17 +688,18 @@ elif modulo == "Análisis Exploratorio (EDA)":
             f"""
             **Hallazgos generados a partir del archivo cargado:**
 
-            1. La etiqueta 1 representa **{positivos} de {total} registros
-               ({porcentaje_positivos:.2f}%)**, por lo que existe un fuerte desbalance
-               entre los grupos.
+            1. **{positivos} de {total} registros ({porcentaje_positivos:.2f}%)** 
+               presentan la etiqueta de depresión Esto significa que la mayoría de 
+               los registros corresponde a adolescentes sin presencia de depresión.
             2. El uso promedio diario de redes sociales es **{social_0:.2f} h**
-               para etiqueta 0 y **{social_1:.2f} h** para etiqueta 1.
-            3. Las horas promedio de sueño son **{sleep_0:.2f} h** para etiqueta 0
-               y **{sleep_1:.2f} h** para etiqueta 1.
-            4. El nivel promedio de estrés es **{stress_0:.2f}** para etiqueta 0
-               y **{stress_1:.2f}** para etiqueta 1.
-            5. El nivel promedio de ansiedad es **{anxiety_0:.2f}** para etiqueta 0
-               y **{anxiety_1:.2f}** para etiqueta 1.
+               para etiqueta 0 y **{social_1:.2f} h** para adolescentes con presencia
+               de despresión.
+            3. Los adolescentes con presencia de depresión duermen en promedio **{sleep_0:.2f} h**
+               y **{sleep_1:.2f} h** de quienes no presentan esta condición.
+            4. Los adolescentes con presencia de depresión registran un nivel promedio de estrés de **{stress_0:.2f}** 
+               y **{stress_1:.2f}** p 8.48, mientras que aquellos sin presencia de depresión.
+            5. Los adolescentes con presencia de depresión presentan un nivel promedio de ansiedad de **{anxiety_0:.2f}**
+               y **{anxiety_1:.2f}** para quienes no presentan esta condición.
             """
         )
 
