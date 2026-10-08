@@ -492,9 +492,9 @@ elif modulo == "Análisis Exploratorio (EDA)":
         diferencia = media_1 - media_0
 
         st.write(
-            f"En el dataset, el promedio del grupo con etiqueta 0 es **{media_0:.2f}** "
-            f"y el del grupo con etiqueta 1 es **{media_1:.2f}**. "
-            f"La diferencia descriptiva es **{diferencia:+.2f}**."
+            f"En el dataset, los adolescentes sin presencia de depresión (etiqueta 0) registran un promedio de **{media_0:.2f}** "
+            f", mientras que aquellos con presencia de depresión (etiqueta 1) registran **{media_1:.2f}**. "
+            f"Esto representa una diferencia de **{diferencia:+.2f}**."
         )
 
         st.markdown("---")
