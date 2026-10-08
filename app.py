@@ -124,7 +124,7 @@ modulo = st.sidebar.selectbox(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.caption("Proyecto académico - Especialización Python for Analytics")
+st.sidebar.caption("Proyecto Final - Especialización Python for Analytics")
 
 # HOME
 
