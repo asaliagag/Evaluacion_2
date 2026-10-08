@@ -6,9 +6,8 @@ import seaborn as sns
 import streamlit as st
 
 
-# ---------------------------------------------------------
 # CONFIGURACIÓN GENERAL
-# ---------------------------------------------------------
+
 st.set_page_config(
     page_title="Teen Mental Health - EDA",
     page_icon="📊",
@@ -36,9 +35,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ---------------------------------------------------------
 # CLASE PRINCIPAL
-# ---------------------------------------------------------
+
 class DataAnalyzer:
     """Clase que agrupa las principales tareas del análisis exploratorio."""
 
@@ -92,9 +90,8 @@ class DataAnalyzer:
         )
 
 
-# ---------------------------------------------------------
 # FUNCIONES AUXILIARES
-# ---------------------------------------------------------
+
 def validar_dataset(dataframe):
     """Valida que el archivo contenga las columnas esperadas."""
     columnas_esperadas = {
@@ -118,9 +115,8 @@ def mostrar_titulo_item(numero, titulo, explicacion):
     st.caption(explicacion)
 
 
-# ---------------------------------------------------------
 # SIDEBAR
-# ---------------------------------------------------------
+
 st.sidebar.title("📊 Teen Mental Health")
 modulo = st.sidebar.selectbox(
     "Seleccione un módulo:",
@@ -130,17 +126,11 @@ modulo = st.sidebar.selectbox(
 st.sidebar.markdown("---")
 st.sidebar.caption("Proyecto académico - Especialización Python for Analytics")
 
-
-# ---------------------------------------------------------
 # HOME
-# ---------------------------------------------------------
+
 if modulo == "Home":
     st.markdown(
         '<div class="main-title">Teen Mental Health – Análisis Exploratorio de Datos</div>',
-        unsafe_allow_html=True
-    )
-    st.markdown(
-        '<div class="subtitle">Proyecto aplicado de Análisis Exploratorio de Datos (EDA)</div>',
         unsafe_allow_html=True
     )
 
@@ -169,8 +159,8 @@ if modulo == "Home":
 
     with col2:
         st.markdown("### Datos del proyecto")
-        st.write("**Autor:** Andrea A.")
-        st.write("**Curso:** Especialización Python for Analytics")
+        st.write("**Autor:** Andrea Aliaga Garma")
+        st.write("**Curso:** Especialización en Python for Analytics")
         st.write("**Año:** 2026")
 
         st.markdown("### Tecnologías utilizadas")
@@ -182,15 +172,13 @@ if modulo == "Home":
     st.markdown("---")
     st.markdown("### Flujo de trabajo")
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("1", "Cargar datos")
-    c2.metric("2", "Explorar")
-    c3.metric("3", "Visualizar")
-    c4.metric("4", "Concluir")
+    c1.metric("Paso 1", "Cargar datos")
+    c2.metric("Paso 2", "Explorar")
+    c3.metric("Paso 3", "Visualizar")
+    c4.metric("Paso 4", "Concluir")
 
-
-# ---------------------------------------------------------
 # CARGA DEL DATASET
-# ---------------------------------------------------------
+
 elif modulo == "Carga del dataset":
     st.title("Carga del dataset")
     st.write(
