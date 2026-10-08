@@ -754,12 +754,12 @@ elif modulo == "Conclusiones":
            nulos** y **{df.duplicated().sum()} registros duplicados**.
 
         2. **Distribución de la etiqueta de depresión:** los adolescentes con depresión
-           representan **{positivos} registros ({pct:.2f}%)** del total. Este desbalance debe considerarse
+           representan **{positivos} casos ({pct:.2f}%)** del total. Este desbalance debe considerarse
            al interpretar comparaciones entre grupos.
 
-        3. **Uso de redes sociales:** Los adolescentes sin presencia de depresión (etiqueta 0)
-           utilizan redes sociales un promedio de **{promedios.loc[0, "daily_social_media_hours"]:.2f} horas** 
-           mientras que aquellos con presencia de depresión (etiqueta 1) registran **{promedios.loc[1, "daily_social_media_hours"]:.2f}
+        3. **Uso de redes sociales:** Los adolescentes sin presencia de depresión utilizan redes
+           sociales un promedio de **{promedios.loc[0, "daily_social_media_hours"]:.2f} horas** 
+           mientras que aquellos con presencia de depresión registran **{promedios.loc[1, "daily_social_media_hours"]:.2f}
            horas**.
 
         4. **Descanso:** los adolescentes sin presencia de depresión duermen en promedio
