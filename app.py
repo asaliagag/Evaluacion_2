@@ -757,16 +757,17 @@ elif modulo == "Conclusiones":
            representan **{positivos} registros ({pct:.2f}%)** del total. Este desbalance debe considerarse
            al interpretar comparaciones entre grupos.
 
-        3. **Uso de redes sociales:** el promedio es de
-           **{promedios.loc[0, "daily_social_media_hours"]:.2f} horas** en la etiqueta 0
-           y **{promedios.loc[1, "daily_social_media_hours"]:.2f} horas** en la etiqueta 1.
+        3. **Uso de redes sociales:** Los adolescentes sin presencia de depresión (etiqueta 0)
+           utilizan redes sociales un promedio de **{promedios.loc[0, "daily_social_media_hours"]:.2f} horas** 
+           mientras que aquellos con presencia de depresión (etiqueta 1) registran **{promedios.loc[1, "daily_social_media_hours"]:.2f}
+           horas**.
 
-        4. **Descanso:** el promedio de sueño es de
-           **{promedios.loc[0, "sleep_hours"]:.2f} horas** en la etiqueta 0 y
-           **{promedios.loc[1, "sleep_hours"]:.2f} horas** en la etiqueta 1.
+        4. **Descanso:** los adolescentes sin presencia de depresión duermen en promedio
+           **{promedios.loc[0, "sleep_hours"]:.2f} horas** y aquellos con presencia de
+           depresión duermen **{promedios.loc[1, "sleep_hours"]:.2f} horas**.
 
         5. **Variables de bienestar:** estrés y ansiedad muestran promedios mayores
-           en la etiqueta 1. Esto constituye un patrón exploratorio del conjunto de
+           en adolescentes con depresión. Esto constituye un patrón exploratorio del conjunto de
            datos y no una relación causal ni un diagnóstico.
         """
     )
