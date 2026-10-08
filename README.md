@@ -17,29 +17,43 @@ Analizar las características del dataset e identificar patrones relacionados co
 - Filtros interactivos.
 - Presentación de hallazgos y conclusiones.
 
-## 4. Capturas de la aplicación
+## 4. Descripción de las variables principales
+
+El dataset contiene información de 1,200 adolescentes y 13 variables relacionadas con sus hábitos de uso de redes sociales y bienestar.
+
+Entre las principales variables analizadas se encuentran:
+
+- **Edad:** edad de los adolescentes incluidos en el estudio.
+- **Género:** permite comparar los resultados según el género de los participantes.
+- **Uso diario de redes sociales:** cantidad de horas que los adolescentes dedican a las redes sociales durante el día.
+- **Horas de sueño:** cantidad de horas que duermen diariamente.
+- **Nivel de estrés:** nivel de estrés registrado para cada adolescente.
+- **Nivel de ansiedad:** nivel de ansiedad registrado para cada adolescente.
+- **Etiqueta de depresión (`depression_label`):** permite diferenciar los registros según dos categorías: 0 (ausencia de depresión) y 1 (presencia de depresión).
+
+## 5. Capturas de la aplicación
 
 A continuación, se presentan algunas pantallas de la aplicación desarrollada en Streamlit.
 
-### 4.1 Pantalla principal
+### 5.1 Pantalla principal
 ![Pantalla principal](Pantalla%20principal.png)
 
-### 4.2 Carga de archivo
+### 5.2 Carga de archivo
 ![Carga de archivo](Carga%20de%20archivo.png)
 
-### 4.3 Calidad de datos
+### 5.3 Calidad de datos
 ![Calidad de datos](Calidad%20de%20datos.png)
 
-### 4.4 Análisis gráfico
+### 5.4 Análisis gráfico
 ![Análisis gráfico](An%C3%A1lisis%20gr%C3%A1fico.png)
 
-### 4.5 Filtros interactivos
+### 5.5 Filtros interactivos
 ![Filtros interactivos](Filtros%20interactivos.png)
 
-### 4.6 Conclusiones
+### 5.6 Conclusiones
 ![Conclusiones](Conclusiones.png)
 
-## 5. Herramientas utilizadas
+## 6. Herramientas utilizadas
 - Python
 - Streamlit
 - Pandas
@@ -47,7 +61,7 @@ A continuación, se presentan algunas pantallas de la aplicación desarrollada e
 - Matplotlib
 - Seaborn
 
-## 6. Ejecución
+## 7. Ejecución
 La aplicación se encuentra publicada en Streamlit Cloud y puede utilizarse directamente desde el enlace proporcionado.
 También es posible ejecutarla desde una computadora siguiendo estos pasos:
 1. Descargar los archivos del repositorio de GitHub.
@@ -55,7 +69,7 @@ También es posible ejecutarla desde una computadora siguiendo estos pasos:
 3. Iniciar la aplicación con el comando streamlit run app.py.
 4. Cargar el archivo CSV desde la aplicación para visualizar los análisis y gráficos.
 
-## 7. Autora
+## 8. Autora
 Andrea Aliaga Garma
 
 Especialización Python for Analytics – 2026.
