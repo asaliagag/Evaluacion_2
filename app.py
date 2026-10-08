@@ -222,13 +222,11 @@ elif modulo == "Carga del dataset":
     except Exception as error:
         st.error(f"No se pudo leer el archivo: {error}")
 
-
-# ---------------------------------------------------------
 # EDA
-# ---------------------------------------------------------
+
 elif modulo == "Análisis Exploratorio (EDA)":
     st.title("Análisis Exploratorio de Datos (EDA)")
-    st.write("Cargue el dataset para ejecutar los 10 ítems de análisis.")
+    st.write("Cargue el dataset para ejecutar el análisis (10 items).")
 
     archivo = st.file_uploader("Seleccione el archivo CSV", type=["csv"], key="uploader_eda")
 
@@ -282,7 +280,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
         })
         st.dataframe(tipos, use_container_width=True)
 
-        if st.checkbox("Mostrar resultado equivalente a df.info()"):
+        if st.checkbox(""Mostrar información técnica del dataset (df.info())"):
             buffer = io.StringIO()
             df.info(buf=buffer)
             st.text(buffer.getvalue())
@@ -337,7 +335,7 @@ elif modulo == "Análisis Exploratorio (EDA)":
         outliers = serie[(serie < limite_inf) | (serie > limite_sup)]
 
         st.write(
-            f"Para **{variable_est}**, el 50% central de los datos se encuentra entre "
+            f"Para la variable **{variable_est}**, el 50% central de los datos se encuentra entre "
             f"{q1:.2f} y {q3:.2f}. Con el criterio IQR se identifican "
             f"**{len(outliers)} posibles valores extremos**."
         )
@@ -361,8 +359,8 @@ elif modulo == "Análisis Exploratorio (EDA)":
         total_nulos = int(df.isnull().sum().sum())
         if total_nulos == 0:
             st.success(
-                "El dataset no presenta valores faltantes. No es necesario aplicar "
-                "fillna(), dropna() o interpolación."
+                "Se revisó el dataset y se confirmó que todas las variables tienen información completa, "
+                "por lo que no es necesario realizar ajustes para completar o eliminar datos faltantes."
             )
         else:
             st.warning(f"Se encontraron {total_nulos} valores faltantes.")
