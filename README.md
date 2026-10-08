@@ -69,7 +69,11 @@ También es posible ejecutarla desde una computadora siguiendo estos pasos:
 3. Iniciar la aplicación con el comando streamlit run app.py.
 4. Cargar el archivo CSV desde la aplicación para visualizar los análisis y gráficos.
 
-## 8. Autora
+## 8. Links relevantes
+- Github: https://github.com/asaliagag/Evaluacion_2 
+- Streamlit: https://dmc62-andreaaliaga-eval2.streamlit.app/
+
+## 9. Autora
 Andrea Aliaga Garma
 
 Especialización Python for Analytics – 2026.
